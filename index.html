@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reformas Miró</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="img/icon.svg" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Great+Vibes&family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="bg-image">
+      <section class="dark-filter"></section>
+    </section>
+
+    <header>
+      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+      <nav id="nav" class="nav">
+        <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+          <li>
+            <span onclick="scrollToSobre('#sobre-nosotros')"
+              >Sobre Nosotros</span
+            >
+          </li>
+          <li>
+            <span onclick="scrollToReformas('#reformas')"
+              >Reformas Integrales</span
+            >
+          </li>
+          <li>
+            <span onclick="scrollToProyectos('#proyectos-b')"
+              >Ultimos Proyectos</span
+            >
+          </li>
+          <li>
+            <span onclick="scrollToContact('#contact')">Contact</span>
+          </li>
+        </ul>
+      </nav>
+      <div id="home" class="logo">
+        <img id="logo-b" src="img/LOGO.svg" alt="ReformasMiró Logo" />
+        <h1>
+          Diseñamos Sueños, Construimos Realidades: <br />
+          <span class="negrita-h">Reformas Integrales</span>
+        </h1>
+      </div>
+    </header>
+    <main>
+      <div id="contenido">
+        <div class="wrapper">
+          <section id="sobre-nosotros">
+            <div>
+              <h2>¡Bienvenido a Reformas Miró!</h2>
+              <p>
+                Somos apasionados por la transformación de espacios. En cada
+                proyecto, fusionamos diseño innovador con ejecución experta. Tu
+                visión es nuestro enfoque, y trabajamos incansablemente para
+                convertirla en una realidad tangible.
+              </p>
+              <p>
+                En Reformas Miró, la calidad, el detalle y tu satisfacción son
+                nuestra prioridad. Nuestro equipo de profesionales está
+                comprometido con la excelencia en cada etapa del proceso, desde
+                la idea inicial hasta la entrega final. Descubre la diferencia
+                de trabajar con un equipo que se preocupa tanto como tú por tu
+                hogar.
+              </p>
+              <p>
+                Estamos aquí para hacer que tu visión cobre vida. ¡Bienvenido a
+                una experiencia de reforma integral única!
+              </p>
+            </div>
+          </section>
+          <section id="reformas">
+            <div id="reformas-background"></div>
+            <div>
+              <h3>¿En qué consiste nuestras Reformas Integrales?</h3>
+              <p>
+                <span class="negrita">Diseño Personalizado:</span> Comenzamos
+                cada proyecto con una escucha atenta para comprender tus
+                necesidades y deseos. Nuestros diseñadores trabajan contigo para
+                crear un plan que refleje tu visión y se adapte a tu estilo de
+                vida.
+              </p>
+              <p>
+                <span class="negrita">Ejecución Impecable:</span> Desde la
+                demolición hasta la instalación, nos enorgullece llevar a cabo
+                cada fase con precisión y atención al detalle. Nuestros
+                profesionales altamente calificados se aseguran de que cada
+                elemento se ajuste perfectamente, desde la pintura hasta los
+                acabados.
+              </p>
+              <p>
+                <span class="negrita">Coordinación Integral:</span> Gestionamos
+                todo el proceso para que no tengas que preocuparte por nada.
+                Coordinamos a los diferentes equipos de trabajo, asegurándonos
+                de que cada aspecto de tu proyecto de reforma integral se
+                realice de manera fluida y eficiente.
+              </p>
+              <p>
+                <span class="negrita">Materiales de Calidad:</span> Utilizamos
+                solo materiales de la más alta calidad para garantizar que cada
+                reforma no solo sea estéticamente impresionante, sino también
+                duradera a lo largo del tiempo.
+              </p>
+            </div>
+          </section>
+          <section id="Elegirnos">
+            <div>
+              <h4>Por qué Elegirnos?</h4>
+              <p>
+                En Reformas Miró, nos apasiona convertir tus ideas en espacios
+                tangibles y funcionales. Nuestro compromiso con la excelencia,
+                la atención al cliente y la entrega puntual nos distingue en el
+                campo de las reformas integrales.
+              </p>
+
+              <p>
+                Descubre cómo podemos revitalizar tu hogar o negocio. ¡Convierte
+                tus sueños en realidad con nuestras reformas integrales
+                excepcionales!
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="proyectos-b" class="wrapper"><h5>Últimos Proyectos</h5></div>
+      <section id="proyectos">
+        <div class="wrapper">
+          <div class="container-pics">
+            <div class="slider-wrapper">
+              <button
+                id="prev-slide"
+                class="slide-button material-symbols-rounded"
+                style="display: block"
+              >
+                &lsaquo;
+              </button>
+              <div class="image-list">
+                <img src="img/img-1.jpg" alt="img-1" class="image-item" />
+                <img src="img/img-2.jpg" alt="img-2" class="image-item" />
+                <img src="img/img-3.jpg" alt="img-3" class="image-item" />
+                <img src="img/img-4.jpg" alt="img-4" class="image-item" />
+                <img src="img/img-5.jpg" alt="img-5" class="image-item" />
+                <img src="img/img-6.jpg" alt="img-6" class="image-item" />
+                <img src="img/img-7.jpg" alt="img-7" class="image-item" />
+                <img src="img/img-8.jpg" alt="img-8" class="image-item" />
+                <img src="img/img-9.jpg" alt="img-9" class="image-item" />
+                <img src="img/img-10.jpg" alt="img-10" class="image-item" />
+                <img src="img/img-11.jpg" alt="img-11" class="image-item" />
+                <img src="img/img-12.jpg" alt="img-12" class="image-item" />
+                <img src="img/img-13.jpg" alt="img-13" class="image-item" />
+                <img src="img/img-14.jpg" alt="img-14" class="image-item" />
+                <img src="img/img-15.jpg" alt="img-15" class="image-item" />
+                <img src="img/img-16.jpg" alt="img-16" class="image-item" />
+                <img src="img/img-17.jpg" alt="img-17" class="image-item" />
+                <img src="img/img-18.jpg" alt="img-18" class="image-item" />
+                <img src="img/img-19.jpg" alt="img-19" class="image-item" />
+                <img src="img/img-20.jpg" alt="img-20" class="image-item" />
+                <img src="img/img-21.jpg" alt="img-21" class="image-item" />
+              </div>
+              <button
+                id="next-slide"
+                class="slide-button material-symbols-rounded"
+                style="display: block"
+              >
+                &rsaquo;
+              </button>
+            </div>
+          </div>
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="contact">
+        <div class="wrapper">
+          <div class="wrapper">
+            <div class="contact-form">
+              <div>
+                <h2>¡Contáctanos!</h2>
+                <div class="contact-message">
+                  <p>
+                    Estamos encantados de saber de ti. Si tienes preguntas,
+                    comentarios o simplemente quieres saludar, no dudes en
+                    ponerte en contacto con nosotros. Completa el formulario a
+                    continuación y nos pondremos en contacto contigo lo antes
+                    posible.
+                  </p>
+                </div>
+              </div>
+              <div class="form-container">
+                <input
+                  id="fullName"
+                  type="text"
+                  placeholder="Nombre Completo"
+                  required
+                />
+                <div>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="e-mail"
+                    required
+                  />
+                  <input
+                    id="phone"
+                    type="phone"
+                    placeholder="Teléfono"
+                    required
+                  />
+                </div>
+                <textarea
+                  id="message"
+                  name=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Escribenos tu mensaje"
+                  required
+                ></textarea>
+                <button onclick="sendMail()">Envía</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="b-footer">
+        <section class="buttons">
+          <ul>
+            <li>
+              <a href="https://m.facebook.com/2131297606979577"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=" https://w.app/Ihc2Lz"
+                ><i class="fa fa-whatsapp" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="copyright">
+          <p><span id="copyright-year"></span> © Reformas Miró</p>
+        </section>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/70833517ca.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script>
+      (function () {
+        emailjs.init("_BGQNrYK0RyRbNvqA");
+      })();
+    </script>
+  </body>
+</html>
