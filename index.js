@@ -3,28 +3,33 @@ const currentYear = new Date().getFullYear();
 
 document.querySelector("#copyright-year").innerHTML = currentYear;
 
-function scrollToSobre(location) {
-  document.querySelector(location).scrollIntoView({
-    behavior: "smooth",
-  });
-}
+// Menu hamburgesa
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+const body = document.querySelector('body');
 
-function scrollToReformas(location) {
-  document.querySelector(location).scrollIntoView({
-    behavior: "smooth",
-  });
-}
+abrir.addEventListener("click", () => {
+  nav.classList.add("visible");
+  abrir.classList.remove('displayMenu');
+  cerrar.classList.add('displayMenu');
+  body.classList.add('stop-scrolling');
+});
 
-function scrollToProyectos(location) {
+cerrar.addEventListener("click", () => {
+  nav.classList.remove("visible");
+  abrir.classList.add('displayMenu');
+  cerrar.classList.remove('displayMenu');
+  body.classList.remove('stop-scrolling');
+});
+function scrollToLocation(location) {
   document.querySelector(location).scrollIntoView({
     behavior: "smooth",
   });
-}
-
-function scrollToContact(location) {
-  document.querySelector(location).scrollIntoView({
-    behavior: "smooth",
-  });
+  nav.classList.remove("visible");
+  body.classList.remove('stop-scrolling');
+  abrir.classList.add('displayMenu');
+  cerrar.classList.remove('displayMenu')
 }
 
 const initSlider = () => {
@@ -132,18 +137,7 @@ function sendMail() {
     .catch((error) => console.log(error));
 }
 
-// Menu hamburgesa
-const nav = document.querySelector("#nav");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
 
-abrir.addEventListener("click", () => {
-  nav.classList.add("visible");
-});
-
-cerrar.addEventListener("click", () => {
-  nav.classList.remove("visible");
-});
 
 //EmailJS service
 // function initializeEmailJS() {

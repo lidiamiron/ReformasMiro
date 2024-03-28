@@ -24,27 +24,23 @@
     </section>
 
     <header>
-      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-      <nav id="nav" class="nav">
+      <div class="menu-btns">
+        <button id="abrir" class="abrir-menu displayMenu"><i class="bi bi-list"></i></button>
         <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+      </div>
+      <nav id="nav" class="nav">
         <ul class="nav-list">
-          <li>
-            <span onclick="scrollToSobre('#sobre-nosotros')"
-              >Sobre Nosotros</span
-            >
+          <li onclick="scrollToLocation('#sobre-nosotros')">
+            Sobre Nosotros
           </li>
-          <li>
-            <span onclick="scrollToReformas('#reformas')"
-              >Reformas Integrales</span
-            >
+          <li onclick="scrollToLocation('#reformas')">
+            Reformas Integrales
           </li>
-          <li>
-            <span onclick="scrollToProyectos('#proyectos-b')"
-              >Ultimos Proyectos</span
-            >
+          <li onclick="scrollToLocation('#proyectos-b')">
+            Ultimos Proyectos
           </li>
-          <li>
-            <span onclick="scrollToContact('#contact')">Contact</span>
+          <li onclick="scrollToLocation('#contact')">
+            Contact
           </li>
         </ul>
       </nav>
