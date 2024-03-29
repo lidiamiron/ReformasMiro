@@ -25,23 +25,17 @@
 
     <header>
       <div class="menu-btns">
-        <button id="abrir" class="abrir-menu displayMenu"><i class="bi bi-list"></i></button>
+        <button id="abrir" class="abrir-menu displayMenu">
+          <i class="bi bi-list"></i>
+        </button>
         <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
       </div>
       <nav id="nav" class="nav">
         <ul class="nav-list">
-          <li onclick="scrollToLocation('#sobre-nosotros')">
-            Sobre Nosotros
-          </li>
-          <li onclick="scrollToLocation('#reformas')">
-            Reformas Integrales
-          </li>
-          <li onclick="scrollToLocation('#proyectos-b')">
-            Ultimos Proyectos
-          </li>
-          <li onclick="scrollToLocation('#contact')">
-            Contact
-          </li>
+          <li onclick="scrollToLocation('#sobre-nosotros')">Sobre Nosotros</li>
+          <li onclick="scrollToLocation('#reformas')">Reformas Integrales</li>
+          <li onclick="scrollToLocation('#proyectos-b')">Ultimos Proyectos</li>
+          <li onclick="scrollToLocation('#contact')">Contact</li>
         </ul>
       </nav>
       <div id="home" class="logo">
@@ -141,7 +135,7 @@
                 class="slide-button material-symbols-rounded"
                 style="display: block"
               >
-                &lsaquo;
+              <i class="bi bi-arrow-left"></i></i>
               </button>
               <div class="image-list">
                 <img src="img/img-1.jpg" alt="img-1" class="image-item" />
@@ -171,7 +165,7 @@
                 class="slide-button material-symbols-rounded"
                 style="display: block"
               >
-                &rsaquo;
+              <i class="bi bi-arrow-right"></i>
               </button>
             </div>
           </div>
@@ -230,7 +224,7 @@
                   placeholder="Escribenos tu mensaje"
                   required
                 ></textarea>
-                <button onclick="sendMail()">Envía</button>
+                <button class="send" onclick="sendMail()">Envía</button>
               </div>
             </div>
           </div>
@@ -248,7 +242,7 @@
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </li>
             <li>
-              <a href=" https://w.app/Ihc2Lz"
+              <a href=" https://wa.me/34678049552"
                 ><i class="fa fa-whatsapp" aria-hidden="true"></i>
               </a>
             </li>
