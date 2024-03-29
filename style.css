@@ -631,6 +631,9 @@ textarea {
   #reformas-background {
     right: calc(((100vw - 350px) / 2) * -1);
   }
+  .form-container div {
+    display: grid;
+  }
 }
 
 @media only screen and (max-width: 350px) {
@@ -640,8 +643,5 @@ textarea {
 
   #reformas-background {
     right: calc(((100vw - 290px) / 2) * -1);
-  }
-  .form-container div {
-    display: grid;
   }
 }
