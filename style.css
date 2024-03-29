@@ -632,3 +632,16 @@ textarea {
     right: calc(((100vw - 350px) / 2) * -1);
   }
 }
+
+@media only screen and (max-width: 350px) {
+  .wrapper {
+    max-width: 290px;
+  }
+
+  #reformas-background {
+    right: calc(((100vw - 290px) / 2) * -1);
+  }
+  .form-container div {
+    display: grid;
+  }
+}
